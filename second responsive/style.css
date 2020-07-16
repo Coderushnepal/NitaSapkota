@@ -1,0 +1,714 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+body
+{
+	font-family: 'Poppins', sans-serif;	
+}
+
+header
+{
+	display: flex;
+	width: 85%;
+	height: 10vh;
+	margin: auto;
+	align-items: center;
+}
+
+.logo-container, .ham-menu
+{
+	display: flex;
+}
+
+.logo-container
+{
+	flex: 2;
+}
+
+.ham
+{
+	width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    flex: end;
+}
+
+.ham-icon 
+{
+	float: right;
+	display: inline-block;
+}
+
+.wrapper
+{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.register
+{
+	clip-path: polygon(0 0, 100% 0, 100% calc(100% - 4.25vw), 0% 100%);
+	width: 100%;
+	height: 533px;
+	background-color: #2F70FE;
+}
+
+.partner-hero-left,.partner-hero-right
+{
+	padding-left: 60px;
+}
+
+.partner-hero-left img,.partner-hero-right img
+{
+	width: 80%;	
+}
+
+.partner-hero-right img
+{
+	width: 75%;	
+}
+
+.slogans
+{
+	padding-top: 100px;	
+	text-align: center;
+}
+.slogan
+{
+	font-size: 25px;
+	padding-bottom: 20px; 
+}
+
+.slogan, .sub-slogan
+{
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+	
+}
+
+.sub-slogan
+{
+	padding-bottom: 40px;
+}
+
+.register-button
+{
+	padding: 15px 20px;
+	background-color: #000000;
+	border: none;
+	color: white;
+	cursor: pointer;
+	font-size: 13px;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+	font-family: poppins;
+}
+
+.list-sell-grow
+{
+	margin-top: -65px;
+	width: 100%;
+	height: auto;
+	background-color: rgba(0, 255, 133, 0.08);
+}
+
+.vector, .vector1
+{
+	display: none;
+}
+
+.objects
+{
+	text-align: center;
+	padding-bottom: 100px;
+}
+
+
+.List
+{
+	padding-top: 150px;
+	padding-bottom: 40px;
+}
+
+.master
+{
+	padding: 20px;
+}
+
+.nav-links, .button1, .login
+{
+	display: none;
+}
+
+/*footer*/
+
+footer
+{
+	padding:0px 40px;
+}
+
+.sub-product, .sub-company, .sub-users, .sub-guides, .sub-contact
+{
+	display: none;
+}
+
+
+.product, .company, .users, .guides, .contact
+{
+	padding: 20px 0px;
+	border-bottom: 1px solid black;
+	font-size: 14px;
+}
+
+.social
+{
+	padding: 20px 0px;
+}
+
+i
+{
+	float:right;
+  	position: relative;
+  	display: inline-block;
+  	margin-top: 20px;
+}
+
+.Products:hover .sub-product 
+{
+	opacity: 0.6;
+  	transition: 0.3s;
+	display: block;
+}
+
+.Company-feature:hover .sub-company
+{
+	opacity: 0.6;
+  	transition: 0.3s;
+	display: block;
+}
+
+.Users-feature:hover .sub-users
+{
+	opacity: 0.6;
+  	transition: 0.3s;
+	display: block;
+}
+
+.main-Guides:hover .sub-guides
+{
+	opacity: 0.6;
+  	transition: 0.3s;
+	display: block;
+}
+
+.Contact-Us:hover .sub-contact
+{
+	opacity: 0.6;
+  	transition: 0.3s;
+	display: block;
+}
+
+
+/*Intro Content*/
+.clearfix:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.contents
+{
+	padding: 10px;
+	padding-top: 40px;
+}
+
+.clearfix
+{
+	text-align: center;
+}
+
+.your-channel
+{
+	padding: 30px 0px 20px 0px;
+}
+
+.channel-content
+{
+	padding-bottom: 20px;
+}
+
+.channel-content, .signup
+{
+	font-size: 11.25px;
+}
+
+.signup
+{
+	color: #2F70FE;
+	padding-bottom: 30px;
+}
+
+.content-img, .msg-img, .section-img, .Track-img, .version-img
+{
+	text-align: center;
+}
+
+.content-img img, .msg-img img
+{
+	width: 85%;
+}
+
+.Track-img img, .version-img img
+{
+	width: 75%;
+}
+
+.section-img img
+{
+	width: 65%;
+}
+
+
+/*tablet view for contents*/
+@media only screen and (min-width: 768px)
+{
+	.clearfix
+	{
+		text-align: left;
+		padding-left: 40px;
+	}
+
+	.channel-content, .signup
+	{
+		font-size: 12px;
+	}
+
+	.main-content1
+	{
+		margin-top: 30px;
+	  	width: 50%;
+	  	float: left;
+	}
+
+	.content-img img
+	{
+	  width: 50%;
+	  float: right;
+	}
+
+	.main-content2
+	{
+	  	width: 50%;
+	  	float: right;
+	}
+
+	.msg-img img
+	{
+	 	width: 45%;
+	 	float: left;
+	}
+
+	.main-content3
+	{
+	  	width: 50%;
+	  	float: left;
+	}
+
+	.section-img img
+	{
+	  width: 40%;
+	  float: right;
+	}
+
+	.main-content4
+	{
+	  	width: 50%;
+	  	float: right;
+	}
+
+	.Track-img img
+	{
+	  width: 40%;
+	  float: left;
+	}	
+
+	.main-content5
+	{
+	  	width: 50%;
+	  	float: left;
+	}
+
+	.version-img img
+	{
+	  width: 40%;
+	  float: right;
+	}
+
+}
+
+/*desktop view for contents*/
+@media only screen and (min-width: 1024px)
+{
+	.clearfix
+	{
+		margin-left: 40px;
+	}
+
+	.your-channel
+	{
+		font-size: 28px;
+	}
+	.channel-content, .signup
+	{
+		font-size: 14px;
+	}
+
+	.main-content2
+	{
+	  	margin-top: 20px;
+	}
+
+	.main-content3, .main-content4, .main-content5
+	{
+	  	margin-top: 40px;
+	}
+}
+
+@media only screen and (min-width: 1440px)
+{
+	.contents
+	{
+		max-width: 1024px;
+		margin-left: 14%;
+	}
+}
+
+
+/*Responsive for header and sections*/
+@media only screen and (min-width: 768px)
+{
+	.wrapper
+	{
+		width: 100%
+	}
+
+	.register
+	{
+		height: 533px;
+	}
+	
+	.vector, .vector1
+	{
+		display: block;
+	}
+
+	.slogan
+	{
+		font-size: 48px;
+		padding-bottom: 20px; 
+	}
+
+	.partner-hero-left img
+	{
+		margin-top: -220px;
+		width: 400px;
+		position: absolute;
+	}
+
+	.partner-hero-right
+	{
+		position: absolute;
+		margin-top: -303px;
+		margin-left: 50%;
+	}
+
+	.partner-hero-left ,.partner-hero-right
+	{
+		padding-left: 0px;
+		display: block;		
+		mix-blend-mode: luminosity;
+	}
+
+	.partner-hero-left img
+	{
+		margin-top: -150px;
+		width: 300px;
+		position: absolute;
+	}
+
+	.partner-hero-right img
+	{
+		width: 250px;
+	}
+
+	.partner-hero-right
+	{
+		position: absolute;
+		margin-top: -210px;
+		margin-left: 63%;
+	}
+
+
+	.master 
+	{
+	  float: left;
+	  margin-left: 7%;
+	  width: 20%;
+	}
+
+	.list-sell-grow:after 
+	{
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	.objects
+	{
+		padding-bottom: 350px;
+	}	
+
+	.vector, .vector1
+	{
+		position: absolute;
+	}
+
+	.vector img, .vector1 img
+	{
+		width: 60px;
+		height: auto;
+	}
+
+	.vector
+	{
+		margin-top: 60px;
+		margin-left: 660px;
+	}
+
+	.vector1
+	{
+		margin-top: 500px;
+		margin-left: 60px;
+	}
+		
+
+@media only screen and (min-width: 1024px)
+{
+	.partner-hero-left ,.partner-hero-right
+	{
+		display: block;
+	}
+
+	.nav-links, .button1, .login
+	{
+		display: block;
+	}
+
+	.ham-menu
+	{
+		display: none;
+	}	
+
+	.logo-container,.nav-links,.login
+	
+	{
+		display: flex;
+	}
+
+	.logo-container
+	{
+		flex: 2;
+	}
+
+	nav
+	{
+		flex:1.5;
+	}
+
+	.nav-links
+	{
+		justify-content: space-around;
+		list-style: none;
+	}
+
+	.nav-link
+	{
+		color: black;
+		font-size: 15px;
+		text-decoration: none;
+	}
+
+	.login
+	{
+		padding-left: 10px;
+		display: flex;
+		list-style: none;
+	}
+	.Demo
+	{
+		border: 2px solid #2F70FE;
+	    padding: 8px 15px;
+	    font-size: 15px;
+	    color: #2F70FE;
+	    background-color: white;
+	    cursor: pointer;
+	    font-family: poppins;
+	}	
+
+	.partner-hero-left img
+	{
+		margin-left: 10%;
+		width: 400px;
+		margin-top: -210px;
+	}
+
+	.partner-hero-right img
+	{
+		width: 350px;		
+		margin-top: -98px;
+	}
+
+	.partner-hero-right
+	{
+		margin-left: 65%;
+	}
+
+
+	.vector img, .vector1 img
+	{
+		width: 80px;
+		height: auto;
+	}
+
+	.vector
+	{
+		margin-top: 60px;
+		margin-left: 800px;
+	}
+
+	.vector1
+	{
+		margin-top: 480px;
+		margin-left: 60px;
+	}
+
+	.master 
+	{
+	  margin-left: 8%;
+	}
+}
+
+@media only screen and (min-width: 1440px)
+{
+	.vector
+	{
+		margin-top: 60px;
+		margin-left: 1350px;
+	}
+}
+
+@media only screen and (min-width: 768px)
+{
+	.fa
+	{
+		display: none;
+	}
+
+	footer
+	{
+		background-color: black;
+		color: white;
+		padding-top: 50px;
+	}
+	
+	.product, .company, .users, .guides, .contact
+	{
+		padding: 20px 0px;
+		border:none;
+		font-size: 14px;
+	}
+
+	.footer-top
+	{
+		display: flex;
+	}
+	.sub-product, .sub-company, .sub-users, .sub-guides, .sub-contact
+	{
+		display: block;
+		font-size: 13px;
+	}
+
+	.Products, .Users-feature, .main-Guides, .Contact-Us
+	{
+		flex: 1;
+	}
+
+	.Company-feature
+	{
+		flex: 1.25;
+	}
+
+	.Products, .Company-feature, .Users-feature, .main-Guides
+	{
+		padding-left: 20px;
+		padding-right: 40px;
+	}
+
+	.Products, .Company-feature, .Users-feature
+	{
+		padding-left: 25px;
+	}
+
+	.social, .copyright
+	{
+		text-align: center;
+	}	
+
+	.copyright
+	{
+		padding-bottom: 40px;
+	}
+}
+
+@media only screen and (min-width: 1024px)
+{
+	footer
+	{
+		padding-left: 80px;
+	}
+
+	.copyright
+	{
+		text-align: left;
+		padding-left: 20px;
+	}	
+
+	.footer-bottom
+	{
+		padding-top: 30px;
+	}
+
+	.social
+	{
+		text-align: right;
+		padding:0px;
+		position: absolute;
+		float: right;
+		width: 80%;
+		font-size: 13px;
+	}
+}
+
+@media only screen and (min-width: 1024px)
+{
+	footer
+	{
+		padding-left: 130px;
+	}
+}

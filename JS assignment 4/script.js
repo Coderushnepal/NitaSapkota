@@ -11,7 +11,7 @@ btn.onclick = function(e) {
         box.appendChild(newCircle);
         var direction = 1;
         newCircle.addEventListener("click" , function() {
-          var  interval = setInterval(function(){
+             var interval = setInterval(function(){
                 var nextTop = parseInt(newCircle.style.top) + 10 * direction;
                 newCircle.style.top = nextTop + "px";
                 if( nextTop >= (height - 20) || nextTop<= 0 ) {

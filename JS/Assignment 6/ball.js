@@ -47,13 +47,16 @@ function Ball(i) {
 
 	this.move = function() {
 		this.isDeleteable = true;
+		var rand = Math.random();
 		this.interval = setInterval(() => {
 			var currentTop = parseInt(that.ball.style.top);
-			var nextTop = currentTop + Math.random() * 5;
+			var nextTop = currentTop + (rand * 200) % 3 + 1;
 			that.ball.style.top = nextTop + 'px';
-		}, 100/60);
+		}, 1000 / 60);
 	};
 
+
+	
 	this.remove = function() {
 		console.log(this.ball);
 		document.body.removeChild(this.ball);

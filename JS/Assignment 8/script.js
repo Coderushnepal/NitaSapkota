@@ -54,9 +54,3 @@ var letterCount = function() {
 
 letterCount();
 
-var incorrectDiv = document.createElement('div');
-incorrectDiv.id = 'incorrect';
-incorrectDiv.classList.add('incorrect');
-incorrectDiv.innerHTML = 'Wrong Word:';
-document.getElementById('storeLetters').appendChild(incorrectDiv);
-

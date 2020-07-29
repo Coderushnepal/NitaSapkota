@@ -1,20 +1,3 @@
-var nameList = `January
-February
-March
-April
-May
-June
-July
-August
-September
-October
-November
-December`;
-
-var names = nameList.split('\n');
-var randomNames = names[Math.floor(Math.random() * names.length)].toLowerCase();
-
-
 var titleDiv = document.createElement('div');
 var heading = document.createElement('h1');
 var subHeading = document.createElement('p');
@@ -29,22 +12,21 @@ heading.style.fontWeight = 'bold';
 heading.style.color = '#ffffff';
 
 
-subHeading.innerHTML = 'Find the hidden word';
+subHeading.innerHTML = 'Find the hidden word ';
 subHeading.style.color = '#ffffff';
 
 document.body.appendChild(titleDiv);
 titleDiv.appendChild(heading);
 titleDiv.appendChild(subHeading);
 
+// Fetch the name of fellows
+var fellows = nameList.split('\n');
+var randomFellow = fellows[Math.floor(Math.random() * fellows.length)].toLowerCase(); //barsha
+var randomFellowName = randomFellow.split(''); //yesma fellow ko name in letters aairakochha // [b,a,r,s,h,a]
 
-var randomNamesMonths = randomNames.split(''); 
-
-
-console.log(randomNamesMonths);  
-
-
+console.log(randomFellowName);  
 var letterCount = function() {
-    for( var i=0; i < randomNamesMonths.length; i++ ) {
+    for( var i=0; i < randomFellowName.length; i++ ) {
         var newDiv = document.createElement('div');
         newDiv.classList.add('letter');
         var divisions = document.getElementById('letter-container');
@@ -53,4 +35,6 @@ var letterCount = function() {
 }
 
 letterCount();
+
+
 

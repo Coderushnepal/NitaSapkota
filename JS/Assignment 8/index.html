@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hangman</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="style.css" type="text/css" rel='stylesheet'>
+    <title>Document</title>
 </head>
-<body style="overflow: hidden;">
+<body>
+    <!--creating div for title and subtitle-->
+    <div class="title" id="title">
+        <h2 style="text-align: center; color: white;">Hangman</h2>
+        <div style="text-align: center; color: white;" class="lineText" id="lineText">Enter a letter in the blanks</div>
+        
+    </div>
+    <!--Creating div for hangman body-->
     <div class="game-container">
         <svg height="250" width="200" class="figure-container">
             <!-- Rod -->
-
             <line x1="60" y1="20" x2="140" y2="20"></line>
             <line x1="140" y1="20" x2="140" y2="50" />
             <line x1="60" y1="20" x2="60" y2="230" />
@@ -27,19 +33,18 @@
             <line x1="140" y1="150" x2="120" y2="180" class="figure-part" />
             <line x1="140" y1="150" x2="160" y2="180" class="figure-part" />
         </svg>
-        <div id="letter-container" class="letter-container">
-            
+        <!--Div for game over-->
+        <div id="game-over" class="game-over">
+            <button id="game-over-btn" class="game-over-btn"></button>
         </div>
-        
-        <div id="wrong-letter-container" class="wrong-letter-container">
-            
-        </div>
-        <div id="already-guessed" class="already-guessed">
-            
+        <!--Div for game won-->
+        <div id="game-won" class="game-won">
+            <button id="game-won-btn" class="game-won-btn"></button>
         </div>
     </div>
 </body>
-    <script src="display.js"></script>
-    <script src="name.js"></script>
-    <script src="script.js"></script>
+<script src="name.js"></script>
+<script src="display.js"></script>
+<script src="script.js"></script>
+
 </html>

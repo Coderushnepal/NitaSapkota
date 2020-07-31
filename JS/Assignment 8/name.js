@@ -1,19 +1,19 @@
-var nameList = `Neeta
-Neha
-Srijana 
-Smrity
-Sami
-Kirtee
-Trija
-Sindhu
-Kusum
-Elisha
-Rachana
-Barsha
-Pooja
-Bisikha
-Kritika
-Srijana`;
+var wordsList = `January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December`;
 
-var fellows = nameList.split('\n');
-var randomFellow = fellows[Math.floor(Math.random() * fellows.length)].toLowerCase();
+var splitList = wordsList.split('\n');
+console.log(splitList);
+var randomWord = splitList[Math.floor(Math.random() * splitList.length)].toLowerCase();
+console.log(randomWord);
+var wordLetters = randomWord.split('');
+console.log(wordLetters);

@@ -1,40 +1,34 @@
-var titleDiv = document.createElement('div');
-var heading = document.createElement('h1');
-var subHeading = document.createElement('p');
+//--------------------------Creating blanks to enter letters----------------------------------------
+//----creating main div for dashlines
+var letterDiv = document.createElement('div')               
 
-titleDiv.id = 'titlediv';
-titleDiv.classList.add('titlediv');
-titleDiv.style.position = 'absolute';
-titleDiv.style.textAlign = 'center';
+letterDiv.id = 'letterDiv';
+letterDiv.class = 'letterDiv';
+letterDiv.style.color = 'white'
+letterDiv.style.marginLeft = '350px'
+document.body.appendChild(letterDiv);
 
-heading.innerHTML = 'Hangman';
-heading.style.fontWeight = 'bold';
-heading.style.color = '#ffffff';
+//--------creating div for alreadyguessed letters
+var alreadyGuessed = document.createElement('div')
 
+alreadyGuessed.id = 'alreadyGuessed';
+alreadyGuessed.class = 'alreadyGuessed';
+document.body.appendChild(alreadyGuessed);
 
-subHeading.innerHTML = 'Find the hidden word ';
-subHeading.style.color = '#ffffff';
+//-----creating div for wrongletter container
+var wrongLetterContainer = document.createElement('div')
 
-document.body.appendChild(titleDiv);
-titleDiv.appendChild(heading);
-titleDiv.appendChild(subHeading);
+wrongLetterContainer.id = 'wrongLetterContainer';
+wrongLetterContainer.class = 'wrongLetterContainer';
+document.body.appendChild(wrongLetterContainer);
 
-// Fetch the name of fellows
-var fellows = nameList.split('\n');
-var randomFellow = fellows[Math.floor(Math.random() * fellows.length)].toLowerCase(); //barsha
-var randomFellowName = randomFellow.split(''); //yesma fellow ko name in letters aairakochha // [b,a,r,s,h,a]
-
-console.log(randomFellowName);  
-var letterCount = function() {
-    for( var i=0; i < randomFellowName.length; i++ ) {
-        var newDiv = document.createElement('div');
-        newDiv.classList.add('letter');
-        var divisions = document.getElementById('letter-container');
-        divisions.appendChild(newDiv);
+//----creating dashlines in main div
+function countLetter() {
+    for( var i=0; i < wordLetters.length; i++ ) {
+        var dashline = document.createElement('div');
+        dashline.classList.add('dash');
+        var newDiv = document.getElementById('letterDiv');
+        newDiv.appendChild(dashline);
     }
 }
-
-letterCount();
-
-
-
+countLetter();

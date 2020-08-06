@@ -1,4 +1,25 @@
-.App {
+.names{
+  text-align: center;
+}
+
+.btn{
+  background-color: blue;
+  font-size: 30px;
+  border-radius: 7px;
+  color: white;
+  
+
+
+}
+
+div{
+  text-align: center;
+  
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+h2{
   text-align: center;
 }
 

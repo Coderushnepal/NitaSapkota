@@ -20,7 +20,7 @@ const withRedBull = (WrappedComponent) => {
         }
 
         render() {
-            return <WrappedComponent count={this.state.count} wings={this.wings} flyaway={this.flyaway} {...this.props} />;
+            return <WrappedComponent count={this.state.count} wings={this.wings} flyaway={this.flyAway} {...this.props} />;
           }
         
 

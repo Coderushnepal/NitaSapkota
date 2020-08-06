@@ -1,0 +1,25 @@
+.main {
+  text-align: center;
+}
+
+.red{
+  color: red;
+}
+
+.green{
+  color:blue;
+}
+
+.btn{
+  font-size: 40px;
+  border-radius: 8px;
+  width: 100px;
+  background-color: black;
+  color: white;
+}
+
+div{
+  border: 1px solid black;
+  background-color: skyblue;
+  border-color: skyblue;
+}

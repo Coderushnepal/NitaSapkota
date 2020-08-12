@@ -1,20 +1,21 @@
-import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter, Switch, Route} from "react-router-dom";
 
-import * as routes from '../constants/routes';
-import history from '../utils/history';
+import history from "../utils/history";
+import * as routes from "../constants/routes";
 
-import Main from './main';
+import Main from "./main";
+import Favourites from "./favourites"
 
-const Favourite = () => <h2> Favourites Page </h2>;
-
-const RouterApp = () => (
-	<BrowserRouter history={history}>
-		<Switch>
-			<Route path={routes.HOME} component={Main} />
-			<Route path={routes.FAVOURITES} component={Favourite} />
-		</Switch>
-	</BrowserRouter>
+// const Favourites = () =><h2>I am Favourites.</h2>;
+const AppRouter = () => (
+  <BrowserRouter history={history}>
+    <Switch>
+      <Route exact path={routes.HOME} component={Main} />
+      <Route exact path={routes.FAVOURITES} component={Favourites} />
+      {/* <MainRouter /> */}
+    </Switch>
+  </BrowserRouter>
 );
 
-export default RouterApp;
+export default AppRouter;

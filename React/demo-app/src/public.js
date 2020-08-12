@@ -1,7 +1,8 @@
 //Application CSS
-import './assets/sass/style.scss';
-// import './asset/css/spinner.css';
-// import './asset/css/toster.css';
+import "./assets/sass/style.scss";
+import "./assets/css/toaster.css";
+import "./assets/css/spinner.css";
 
-//Library dependent CSS
-// import "izitoast/dist/css/iziToast.css"
+//Library Dependent CSS
+import "izitoast/dist/css/iziToast.css";
+

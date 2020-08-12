@@ -144,4 +144,4 @@ export const dummyBeersData = [
         "Be careful not to collect too much wort from the mash. Once the sugars are all washed out there are some very unpleasant grainy tasting compounds that can be extracted into the wort.",
       contributed_by: "Sam Mason <samjbmason>",
     },
-];
+  ];

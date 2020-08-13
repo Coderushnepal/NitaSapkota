@@ -24,8 +24,8 @@ class BeerModal extends React.Component {
         isLoading: false,
       });
       toast.success({
-        title: "Yay!!",
-        message: "Beers successfully retrieved!",
+        title: "Wohooo!!!!",
+        message: "finally found a beer that I love!!",
       });
     } catch (error) {
       const errorMsg = error.response.data.message;

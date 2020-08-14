@@ -13,9 +13,9 @@
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-infinite-scroll-component": "^5.0.5",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
-    "vue-izitoast": "^1.2.1"
+    "react-scripts": "3.4.1"
   },
   "scripts": {
     "start": "react-scripts start",

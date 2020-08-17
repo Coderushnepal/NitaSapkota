@@ -2,10 +2,10 @@ import React from "react";
 import { BrowserRouter, Switch, Route} from "react-router-dom";
 
 import history from "../utils/history";
-import * as routes from "../constants/routes";
+import * as routes from '../constants/routes';
 
 import Main from "./main";
-import Favourites from "./favourites"
+import Favourites from './favorites';
 
 // const Favourites = () =><h2>I am Favourites.</h2>;
 const AppRouter = () => (

@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 
 const RecipeItem = (props) => {
    const{name, image, ingredientLines}=props;
   return(
-    <div class = "col-md-3">
+    
     <div class= "card py-2">
         <img 
         src={image} 
@@ -18,7 +18,7 @@ const RecipeItem = (props) => {
                 ))}
         </ul>
     </div>
-</div>
+
   );
 }
 

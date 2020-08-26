@@ -1,7 +1,7 @@
 import React  from 'react';
 
 const Header = props => {
-    const {search, onInputChange} = props;
+    const {search, onInputChange, onSearchClick} = props;
     return (
     <div className = "jumbotron">
         <h1 className="display-1"><span class="material-icons brand-icon">
@@ -19,7 +19,8 @@ const Header = props => {
     />
 
     <div class="input-group-append">
-    <button className="btn btn-dark">Search Recipe</button>
+    <button className="btn btn-dark" onClick = {onSearchClick}>
+      Search Recipe</button>
     </div>
   </div>
 

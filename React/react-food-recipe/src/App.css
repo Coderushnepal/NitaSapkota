@@ -1,0 +1,19 @@
+
+.jumbotron {
+background-color: firebrick; 
+color:white;
+padding: 100 0px;
+text-align: center;
+}
+
+.brand-icon {
+    font-size: 100px;
+}
+
+.input-group {
+    width:700px;
+}
+
+.card { 
+    text-align: center;
+}

@@ -2,11 +2,11 @@ import React,{useState, useEffect} from 'react';
 import './App.css';
 import Header from './components/dashboard/Header';
 import Recipes from './components/Recipes';
-import Navbar from './components/layout/Navbar';
+import Router from './components/Router';
 import Axios from 'axios';
-import { BrowserRouter } from 'react-router-dom';
-
-
+import { BrowserRouter,Switch, Route } from 'react-router-dom';
+import Nav from './components/Nav';
+import SignUp from './components/SignUp';
 
 
 
@@ -40,25 +40,46 @@ function App() {
    setSearch(e.target.value)
   };
   return (
+
     <BrowserRouter>
-    <div className="App">
 
       
-      <Navbar/>
+      
     
+    <div className="App">
+    <Nav/>
+    <switch>
+    <Route path ="/"/>
+      
+      <Route path ="/SignUp" component={SignUp}/>
+      
+
+      
+    
+      </switch>
+
+     
+      <div className="Apps">
       <Header 
        search={search} 
        onInputChange={onInputChange}
        onSearchClick={onSearchClick}/>
-       
-   
+      
+
       <div className= "container">
       <Recipes  recipes = {recipes}/>
       </div>
+    </div>
     </div>
     </BrowserRouter>
     
   );
 }
 
+
+const Home =() =>(
+  <div>
+    <h1>Home Page</h1>
+  </div>
+)
 export default App;

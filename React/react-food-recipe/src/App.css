@@ -1,62 +1,61 @@
-
 .jumbotron {
-background-color: firebrick; 
-color:white;
-padding: 100 0px;
-text-align: center;
+  background-color: firebrick;
+  color: white;
+  padding: 100 0px;
+  text-align: center;
 }
 
 .brand-icon {
-    font-size: 100px;
+  font-size: 100px;
 }
 
 .input-group {
-    width:500px;
+  width: 500px;
 }
 
-.card { 
-    text-align: center;
+.card {
+  text-align: center;
 }
-a{
-    color: white;
-    margin: 10px;
-    font-size: 30px;
-    float: right;
-    
-}
-
-.li{
-    text-decoration: none;
-}
-.ul{
-    text-decoration: none;
+a {
+  color: white;
+  margin-left: 10px;
+  font-size: 30px;
+  float: right;
+  text-decoration: none;
 }
 
-nav{
-    display:flex;
-    justif-content: space-around;
-    align-items: center;
-    min-height: 10vh;
-    background-color:white;
-    color:black
+.li {
+  text-decoration: none;
+  float: right;
+}
+.ul {
+  text-decoration: none;
 }
 
-.nav-Links{
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;;
-    list-style:none
-
+.nav-Links {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  color: black;
 }
 
-.span{
-    font-size:10px;
+.span {
+  font-size: 10px;
 }
 
-button{
-    font-size: 20px;
-    border-radius:5px;
-    background-color:black;
-    color: white;
+button {
+  font-size: 20px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 0px;
+  color: black;
+}
+
+.button {
+  float: right;
+}
+
+.users {
+  background-color: coral;
 }

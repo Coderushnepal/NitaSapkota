@@ -1,85 +1,22 @@
-import React,{useState, useEffect} from 'react';
-import './App.css';
-import Header from './components/dashboard/Header';
-import Recipes from './components/Recipes';
-import Router from './components/Router';
-import Axios from 'axios';
-import { BrowserRouter,Switch, Route } from 'react-router-dom';
-import Nav from './components/Nav';
-import SignUp from './components/SignUp';
-
-
+import React from "react";
+import "./App.css";
+import Users from "./components/Users";
+import Api from "./components/Api";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import LogIn from "./components/LogIn";
+import Navbar from "./components/layout/Navbar";
 
 function App() {
-  const [search, setSearch]= useState("chicken");
-  const [recipes, setRecipes] = useState([]);
-
-  const APP_ID ="0ef0aef1";
-  const APP_KEY ="7ded734c1bd8878a67eb391686c09718";
-
-  useEffect( () => { 
-    getRecipes();
-    
-  }, []);
-
-  const getRecipes = async () => {
-    const res  = await Axios.get(
-      `https://api.edamam.com/search?q=${search}&app_id=${APP_ID}&app_key=${APP_KEY}`
-    );
-   
-
-   setRecipes(res.data.hits);
-    };
-
-    const onSearchClick = ()=>{
-      getRecipes();
-    };
-  
-
-  const onInputChange = (e) => {
-   setSearch(e.target.value)
-  };
   return (
-
     <BrowserRouter>
-
-      
-      
-    
-    <div className="App">
-    <Nav/>
-    <switch>
-    <Route path ="/"/>
-      
-      <Route path ="/SignUp" component={SignUp}/>
-      
-
-      
-    
-      </switch>
-
-     
-      <div className="Apps">
-      <Header 
-       search={search} 
-       onInputChange={onInputChange}
-       onSearchClick={onSearchClick}/>
-      
-
-      <div className= "container">
-      <Recipes  recipes = {recipes}/>
-      </div>
-    </div>
-    </div>
+      <Navbar />
+      <Switch>
+        <Route exact path="/" component={Api} />
+        <Route path="/Users" component={Users} />
+        <Route path="/login" component={LogIn} />
+      </Switch>
     </BrowserRouter>
-    
   );
 }
 
-
-const Home =() =>(
-  <div>
-    <h1>Home Page</h1>
-  </div>
-)
 export default App;
